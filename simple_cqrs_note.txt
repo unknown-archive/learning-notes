@@ -1,0 +1,22 @@
+Simple flow
+Controller -> Service -> Data
+
+-----------------------------------
+CQRS
+Commmand -> Command handler -> event -> event handler (SAGA) -> Query -> Query handler
+-----------------------------------
+#Command handler (Create Update Delete) not directly to Databases but create particular events / (Bring the user create command)
+Example
+CreateUser -> for create user in database
+
+#Query handler (Get)
+
+#Saga reactive pattern
+can be plugin to the event
+
+Saga subscribe to event
+
+#Command handler writing to a write database
+#Query handler reading to a read database
+
+projecttionm
